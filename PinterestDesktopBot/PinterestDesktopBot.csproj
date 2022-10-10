@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="29.0.1" />
+    <PackageReference Include="Bogus.Text" Version="29.0.1" />
+    <PackageReference Include="BufferClient" Version="1.0.0" />
+    <PackageReference Include="PinterestApi" Version="1.1.4" />
+    <PackageReference Include="Pop3" Version="2.3.6" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
+    <PackageReference Include="Selenium.Support" Version="3.13.1" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.13.1" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="80.0.3987.10600" />
+    <PackageReference Include="VestaClient" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Extensions\blockimage.crx" />
+    <Content Include="Extensions\blockimage.crx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
